@@ -21,7 +21,7 @@ document.querySelectorAll("[data-price]").forEach((node) => {
 });
 
 document.querySelectorAll(".js-email").forEach((link) => {
-  link.href = `mailto:${landingConfig.email}`;
+  link.href = "mailto:" + landingConfig.email;
 });
 
 document.querySelectorAll(".js-whatsapp").forEach((link) => {
@@ -30,7 +30,7 @@ document.querySelectorAll(".js-whatsapp").forEach((link) => {
     return;
   }
 
-  link.href = `mailto:${landingConfig.email}?subject=Consulta%20por%20gestion%20Meta%20Ads`;
+  link.href = "mailto:" + landingConfig.email + "?subject=Consulta%20por%20gestion%20Meta%20Ads";
   link.textContent = "Enviar email";
   link.setAttribute("aria-label", "Enviar email. Falta configurar el numero de WhatsApp.");
 });
