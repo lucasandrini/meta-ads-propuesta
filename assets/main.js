@@ -1,7 +1,8 @@
 const landingConfig = {
+  // Para WhatsApp usar formato internacional, por ejemplo:
+  // https://wa.me/5491112345678
   whatsappUrl: "",
   email: "lucasandrini01@gmail.com",
-  pdfUrl: "assets/propuesta-meta-ads.pdf",
   prices: {
     tope_inversion_1: "$500.000",
     fee_mensual_1: "$150.000",
@@ -19,10 +20,6 @@ document.querySelectorAll("[data-price]").forEach((node) => {
   }
 });
 
-document.querySelectorAll(".js-pdf-link").forEach((link) => {
-  link.href = landingConfig.pdfUrl;
-});
-
 document.querySelectorAll(".js-email").forEach((link) => {
   link.href = `mailto:${landingConfig.email}`;
 });
@@ -33,6 +30,7 @@ document.querySelectorAll(".js-whatsapp").forEach((link) => {
     return;
   }
 
-  link.href = `mailto:${landingConfig.email}?subject=Consulta%20por%20gesti%C3%B3n%20Meta%20Ads`;
-  link.setAttribute("aria-label", "Hablar por WhatsApp. Falta configurar el número, por ahora abre email.");
+  link.href = `mailto:${landingConfig.email}?subject=Consulta%20por%20gestion%20Meta%20Ads`;
+  link.textContent = "Enviar email";
+  link.setAttribute("aria-label", "Enviar email. Falta configurar el numero de WhatsApp.");
 });
