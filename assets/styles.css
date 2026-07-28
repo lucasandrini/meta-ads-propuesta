@@ -504,6 +504,21 @@ h3 {
   font-size: 18px;
 }
 
+.credential-list {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.credential-list li {
+  padding: 12px 13px;
+  border-left: 3px solid var(--verde-esmeralda);
+  background: #ffffff;
+  color: var(--gris-texto);
+}
+
 .final-cta {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;

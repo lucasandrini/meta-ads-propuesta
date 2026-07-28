@@ -1,7 +1,7 @@
 const landingConfig = {
   // Para WhatsApp usar formato internacional, por ejemplo:
   // https://wa.me/5491112345678
-  whatsappUrl: "",
+  whatsappUrl: "https://wa.me/5491123492031",
   email: "lucasandrini01@gmail.com",
   prices: {
     tope_inversion_1: "$500.000",
